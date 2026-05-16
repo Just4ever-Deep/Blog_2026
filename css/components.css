@@ -1,0 +1,15 @@
+.tml-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.page-number,
+.extend {
+  margin: 0 0.2rem;
+  padding: 0.28rem 0.55rem;
+  border: 1px solid rgba(31,111,235,0.35);
+}
+.page-number.current {
+  border-color: rgba(57,255,136,0.5);
+  color: #39ff88;
+}

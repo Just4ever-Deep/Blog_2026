@@ -1,0 +1,76 @@
+@media (max-width: 1080px) {
+  .tml-shell {
+    grid-template-columns: 1fr;
+  }
+  .tml-sidebar {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+  .post-shell {
+    grid-template-columns: 1fr;
+  }
+  .toc-panel {
+    position: static;
+    max-height: none;
+  }
+  .calendar-grid {
+    min-width: 680px;
+  }
+  .dashboard-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .module-grid,
+  .compact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .tml-header {
+    margin: 0.7rem;
+    padding: 0.8rem;
+  }
+  .tml-shell {
+    padding: 0 0.7rem 0.7rem;
+  }
+  .hero h1 {
+    font-size: 1.45rem;
+  }
+  .header-main {
+    flex-wrap: wrap;
+  }
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0.55rem;
+    border: 1px solid rgba(31,111,235,0.35);
+    background: #0a0f17;
+    color: #39ff88;
+  }
+  .tml-nav {
+    width: 100%;
+    display: none;
+  }
+  .tml-nav.open {
+    display: flex;
+  }
+  .nav-link {
+    font-size: 0.92rem;
+  }
+  .taxonomy-filter-header {
+    flex-wrap: wrap;
+  }
+  .calendar-grid {
+    min-width: 620px;
+  }
+  .dashboard-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-heatmap-grid {
+    min-width: 620px;
+  }
+  .series-nav-links {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,444 @@
+/* Machine intro patch
+ * Original HUD-style opening overlay for the-machine-log.
+ * It uses abstract surveillance UI motifs without copying any show assets.
+ */
+:root {
+  --machine-intro-bg: #05070a;
+  --machine-intro-panel: rgba(13,17,23,0.78);
+  --machine-intro-line: rgba(57,255,136,0.42);
+  --machine-intro-blue: rgba(88,166,255,0.72);
+  --machine-intro-text: #d7e0ea;
+  --machine-intro-muted: #7d8590;
+}
+.machine-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  color: var(--machine-intro-text);
+  background: var(--machine-intro-bg);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+  font-family: "JetBrains Mono", "Fira Code", "SFMono-Regular", Consolas, monospace;
+}
+.machine-intro.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.machine-intro.is-dismissed {
+  display: none;
+}
+.machine-intro__background {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 22% 18%, rgba(31,111,235,0.18), transparent 32%), radial-gradient(circle at 76% 72%, rgba(57,255,136,0.12), transparent 36%), #05070a;
+}
+.machine-intro__grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.58;
+  background-image: url("/images/machine-bg-grid.svg"), linear-gradient(rgba(57,255,136,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(88,166,255,0.035) 1px, transparent 1px);
+  background-size: cover, 48px 48px, 48px 48px;
+  background-position: center;
+  transform: scale(1.04);
+}
+.machine-intro__noise {
+  position: absolute;
+  inset: -20%;
+  opacity: 0.24;
+  background-image: url("/images/machine-bg-noise.svg");
+  background-size: 320px 320px;
+  animation: machineNoise 1.6s steps(2, end) infinite;
+}
+.machine-intro__scan {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent, rgba(57,255,136,0.13), transparent), repeating-linear-gradient(to bottom, rgba(255,255,255,0.025), rgba(255,255,255,0.025) 1px, transparent 1px, transparent 5px);
+  mix-blend-mode: screen;
+  transform: translateY(-100%);
+  animation: machineScan 3.2s ease-in-out infinite;
+}
+.machine-intro__locator {
+  position: absolute;
+  border: 1px solid rgba(57,255,136,0.34);
+  box-shadow: 0 0 22px rgba(57,255,136,0.08), inset 0 0 18px rgba(57,255,136,0.04);
+  background: rgba(57,255,136,0.025);
+  animation: machinePulse 2.8s ease-in-out infinite;
+}
+.machine-intro__locator::before,
+.machine-intro__locator::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: rgba(57,255,136,0.78);
+  border-style: solid;
+}
+.machine-intro__locator::before {
+  top: -1px;
+  left: -1px;
+  border-width: 2px 0 0 2px;
+}
+.machine-intro__locator::after {
+  right: -1px;
+  bottom: -1px;
+  border-width: 0 2px 2px 0;
+}
+.machine-intro__locator--a {
+  width: 26vw;
+  height: 18vw;
+  left: 7vw;
+  top: 18vh;
+}
+.machine-intro__locator--b {
+  width: 22vw;
+  height: 14vw;
+  right: 9vw;
+  top: 24vh;
+  animation-delay: 0.35s;
+}
+.machine-intro__locator--c {
+  width: 30vw;
+  height: 16vw;
+  right: 20vw;
+  bottom: 13vh;
+  animation-delay: 0.75s;
+}
+.machine-intro__panel {
+  position: relative;
+  width: min(760px, calc(100vw - 32px));
+  padding: clamp(24px, 4vw, 44px);
+  border: 1px solid rgba(88,166,255,0.32);
+  background: linear-gradient(180deg, rgba(13,17,23,0.86), rgba(8,11,16,0.74));
+  box-shadow: 0 24px 80px rgba(0,0,0,0.52), inset 0 0 60px rgba(57,255,136,0.035);
+  backdrop-filter: blur(14px);
+  transform: translateY(10px) scale(0.985);
+  animation: machinePanelIn 0.72s ease forwards;
+}
+.machine-intro__corner {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  pointer-events: none;
+  border-color: rgba(57,255,136,0.75);
+  border-style: solid;
+}
+.machine-intro__corner--tl {
+  top: -1px;
+  left: -1px;
+  border-width: 2px 0 0 2px;
+}
+.machine-intro__corner--tr {
+  top: -1px;
+  right: -1px;
+  border-width: 2px 2px 0 0;
+}
+.machine-intro__corner--bl {
+  bottom: -1px;
+  left: -1px;
+  border-width: 0 0 2px 2px;
+}
+.machine-intro__corner--br {
+  right: -1px;
+  bottom: -1px;
+  border-width: 0 2px 2px 0;
+}
+.machine-intro__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: var(--machine-intro-muted);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.machine-intro__meta span:first-child {
+  color: #39ff88;
+  text-shadow: 0 0 14px rgba(57,255,136,0.36);
+}
+.machine-intro__title {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+.machine-intro__title strong {
+  color: #d7e0ea;
+  font-size: clamp(38px, 7vw, 74px);
+  line-height: 0.94;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: 0 0 30px rgba(88,166,255,0.24);
+}
+.machine-intro__eyebrow {
+  color: #58a6ff;
+  font-size: 13px;
+  letter-spacing: 0.32em;
+}
+.machine-intro__terminal {
+  display: grid;
+  gap: 8px;
+  min-height: 150px;
+  padding: 18px;
+  border: 1px solid rgba(57,255,136,0.18);
+  background: rgba(5,7,10,0.58);
+}
+.machine-intro__terminal p {
+  margin: 0;
+  color: rgba(215,224,234,0.88);
+  opacity: 0;
+  transform: translateY(6px);
+  font-size: clamp(13px, 2vw, 15px);
+  line-height: 1.55;
+}
+.machine-intro__terminal p.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.32s ease, transform 0.32s ease;
+}
+.machine-intro__progress {
+  height: 3px;
+  margin-top: 24px;
+  overflow: hidden;
+  background: rgba(125,133,144,0.18);
+}
+.machine-intro__progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #1f6feb, #39ff88);
+  box-shadow: 0 0 16px rgba(57,255,136,0.52);
+  animation: machineProgress 3.4s ease forwards;
+}
+.machine-intro__skip {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  border: 1px solid rgba(125,133,144,0.42);
+  padding: 6px 10px;
+  color: rgba(215,224,234,0.76);
+  background: rgba(5,7,10,0.62);
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+.machine-intro__skip:hover,
+.machine-intro__skip:focus-visible {
+  border-color: rgba(57,255,136,0.72);
+  color: #39ff88;
+  background: rgba(57,255,136,0.08);
+  outline: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .machine-intro,
+  .machine-intro * {
+    animation: none !important;
+    transition: none !important;
+  }
+  .machine-intro__terminal p {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 640px) {
+  .machine-intro__locator {
+    display: none;
+  }
+  .machine-intro__panel {
+    padding: 24px 18px 54px;
+  }
+  .machine-intro__meta {
+    justify-content: flex-start;
+  }
+  .machine-intro__terminal {
+    min-height: 128px;
+  }
+}
+@-moz-keyframes machinePanelIn {
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+@-webkit-keyframes machinePanelIn {
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+@-o-keyframes machinePanelIn {
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes machinePanelIn {
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+@-moz-keyframes machineScan {
+  0% {
+    transform: translateY(-100%);
+  }
+  54% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@-webkit-keyframes machineScan {
+  0% {
+    transform: translateY(-100%);
+  }
+  54% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@-o-keyframes machineScan {
+  0% {
+    transform: translateY(-100%);
+  }
+  54% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes machineScan {
+  0% {
+    transform: translateY(-100%);
+  }
+  54% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@-moz-keyframes machinePulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.82;
+    transform: scale(1.015);
+  }
+}
+@-webkit-keyframes machinePulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.82;
+    transform: scale(1.015);
+  }
+}
+@-o-keyframes machinePulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.82;
+    transform: scale(1.015);
+  }
+}
+@keyframes machinePulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.82;
+    transform: scale(1.015);
+  }
+}
+@-moz-keyframes machineNoise {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-2%, 1.5%);
+  }
+}
+@-webkit-keyframes machineNoise {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-2%, 1.5%);
+  }
+}
+@-o-keyframes machineNoise {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-2%, 1.5%);
+  }
+}
+@keyframes machineNoise {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-2%, 1.5%);
+  }
+}
+@-moz-keyframes machineProgress {
+  0% {
+    width: 0;
+  }
+  68% {
+    width: 82%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes machineProgress {
+  0% {
+    width: 0;
+  }
+  68% {
+    width: 82%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-o-keyframes machineProgress {
+  0% {
+    width: 0;
+  }
+  68% {
+    width: 82%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes machineProgress {
+  0% {
+    width: 0;
+  }
+  68% {
+    width: 82%;
+  }
+  100% {
+    width: 100%;
+  }
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Notes from a computer science graduate student.">
+  <meta name="theme-color" content="#05070A">
+  <title>
+    
+      Research Weekly Log - Week &lt;N&gt; | THE MACHINE LOG
+    
+  </title>
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+    <link rel="alternate" href="/atom.xml" title="THE MACHINE LOG" type="application/atom+xml">
+  
+  <meta name="description" content="本周概览本周阅读本周实现实验记录遇到的问题下周计划杂项笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Research Weekly Log - Week &lt;N&gt;">
+<meta property="og:url" content="http://localhost:4000/posts/4103984525/index.html">
+<meta property="og:site_name" content="THE MACHINE LOG">
+<meta property="og:description" content="本周概览本周阅读本周实现实验记录遇到的问题下周计划杂项笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-04-28T00:40:00.000Z">
+<meta property="article:modified_time" content="2026-04-28T00:40:00.000Z">
+<meta property="article:author" content="Your Name">
+<meta property="article:tag" content="deep-learning">
+<meta property="article:tag" content="experiment">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+<meta name="generator" content="Hexo 8.1.1"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body class="tml-body">
+  
+<div id="machine-intro"
+     class="machine-intro"
+     data-machine-intro
+     aria-label="系统启动片头"
+     role="dialog"
+     aria-live="polite">
+  <div class="machine-intro__background" aria-hidden="true">
+    <div class="machine-intro__grid"></div>
+    <div class="machine-intro__noise"></div>
+    <div class="machine-intro__scan"></div>
+    <div class="machine-intro__locator machine-intro__locator--a"></div>
+    <div class="machine-intro__locator machine-intro__locator--b"></div>
+    <div class="machine-intro__locator machine-intro__locator--c"></div>
+  </div>
+
+  <div class="machine-intro__panel">
+    <div class="machine-intro__corner machine-intro__corner--tl"></div>
+    <div class="machine-intro__corner machine-intro__corner--tr"></div>
+    <div class="machine-intro__corner machine-intro__corner--bl"></div>
+    <div class="machine-intro__corner machine-intro__corner--br"></div>
+
+    <div class="machine-intro__meta">
+      <span>系统在线</span>
+      <span>访问：研究档案</span>
+      <span class="machine-intro__clock" data-machine-intro-clock>--:--:--</span>
+    </div>
+
+    <div class="machine-intro__title">
+      <span class="machine-intro__eyebrow">启动序列</span>
+      <strong>THE MACHINE LOG</strong>
+    </div>
+
+    <div class="machine-intro__terminal" aria-hidden="true">
+      <p data-intro-line>&gt; 初始化观测网格</p>
+      <p data-intro-line>&gt; 正在加载研究索引</p>
+      <p data-intro-line>&gt; 正在校准信号过滤器</p>
+      <p data-intro-line>&gt; 身份：计算机专业研究生</p>
+      <p data-intro-line>&gt; 档案访问已授权</p>
+    </div>
+
+    <div class="machine-intro__progress" aria-hidden="true">
+      <span></span>
+    </div>
+
+    <button class="machine-intro__skip" type="button" data-machine-intro-skip>
+      跳过
+    </button>
+  </div>
+</div>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-scanline" aria-hidden="true"></div>
+  
+<header class="tml-header hud-box">
+  <div class="system-bar">
+    <span class="system-pill">系统在线</span>
+    <span class="system-path">路径: /posts/4103984525/</span>
+    <span class="system-clock">时间: <span id="system-clock">--:--:--</span></span>
+    <span class="system-stats">文章 8 · 分类 9 · 标签 17</span>
+  </div>
+  <div class="header-main">
+    <a href="/" class="site-title">THE MACHINE LOG</a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">菜单</button>
+    <nav class="tml-nav" id="main-nav" aria-label="主导航">
+      
+        
+        
+        
+        
+        <a class="nav-link " data-nav-link href="/">首页</a>
+      
+        
+        
+        
+        
+        <a class="nav-link " data-nav-link href="/projects/">项目档案</a>
+      
+        
+        
+        
+        
+        <a class="nav-link " data-nav-link href="/books/">书单</a>
+      
+        
+        
+        
+        
+        <a class="nav-link " data-nav-link href="/experiments/">实验日志</a>
+      
+        
+        
+        
+        
+        <a class="nav-link " data-nav-link href="/series/">文章系列</a>
+      
+        
+        
+        
+        
+        <a class="nav-link " data-nav-link href="/archives/">归档</a>
+      
+        
+        
+        
+        
+        <a class="nav-link " data-nav-link href="/categories/">分类</a>
+      
+        
+        
+        
+        
+        <a class="nav-link " data-nav-link href="/tags/">标签</a>
+      
+        
+        
+        
+        
+        <a class="nav-link " data-nav-link href="/calendar/">日历热力图</a>
+      
+        
+        
+        
+        
+        <a class="nav-link " data-nav-link href="/search/">搜索</a>
+      
+        
+        
+        
+        
+        <a class="nav-link " data-nav-link href="/about/">关于</a>
+      
+      <a class="nav-link" href="/en/">EN</a>
+    </nav>
+  </div>
+</header>
+
+  <div class="tml-shell">
+    <aside class="tml-sidebar">
+      <div class="sidebar-panel hud-box">
+  <h2 class="panel-title">身份</h2>
+  <p class="sidebar-name">Your Name</p>
+  <p class="sidebar-meta">Computer Science Graduate Student</p>
+  <p class="sidebar-meta">状态: Learning / Researching / Building</p>
+  <p class="sidebar-meta">位置: Asia/Shanghai</p>
+</div>
+
+<div class="sidebar-panel hud-box">
+  <h2 class="panel-title">社交</h2>
+  <ul class="sidebar-list">
+    
+      <li><a href="https://github.com/Just4ever-Deep" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    
+    
+      <li><a href="mailto:your-email@example.com">邮箱</a></li>
+    
+    
+      <li><a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+    
+    
+      <li><a href="/atom.xml">RSS 订阅</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="sidebar-panel hud-box">
+  <h2 class="panel-title">研究方向</h2>
+  <ul class="sidebar-list">
+    
+      
+        
+        <li><a href="/categories/?c=Algorithms">Algorithms</a></li>
+      
+        
+        <li><a href="/categories/?c=Systems">Systems</a></li>
+      
+        
+        <li><a href="/categories/?c=AI">AI</a></li>
+      
+        
+        <li><a href="/categories/?c=Security">Security</a></li>
+      
+        
+        <li><a href="/categories/?c=Engineering">Engineering</a></li>
+      
+    
+  </ul>
+</div>
+
+    </aside>
+    <main class="tml-main" id="main-content">
+      <section class="post-shell">
+  <article class="post-detail hud-box">
+    <header class="post-header">
+      <p class="post-case">案例档案: Research Weekly Log - Week &lt;N&gt;</p>
+      <h1>Research Weekly Log - Week &lt;N&gt;</h1>
+      <div class="post-meta">
+        <span>创建于: 2026-04-28 08:40</span>
+        <span>更新于: 2026-04-28 08:40</span>
+        <span>状态: <span class="status-badge status-active">ACTIVE</span></span>
+        <span>分类: 学习记录</span>
+      </div>
+      <div class="post-meta">
+        
+          <span>分类: Research Log</span>
+        
+        
+          <span>标签: experiment, python, linux, deep-learning</span>
+        
+        <span>阅读时长: 1 分钟</span>
+      </div>
+    </header>
+
+    <div class="post-content"><h2 id="本周概览"><a href="#本周概览" class="headerlink" title="本周概览"></a>本周概览</h2><h2 id="本周阅读"><a href="#本周阅读" class="headerlink" title="本周阅读"></a>本周阅读</h2><h2 id="本周实现"><a href="#本周实现" class="headerlink" title="本周实现"></a>本周实现</h2><h2 id="实验记录"><a href="#实验记录" class="headerlink" title="实验记录"></a>实验记录</h2><h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><h2 id="下周计划"><a href="#下周计划" class="headerlink" title="下周计划"></a>下周计划</h2><h2 id="杂项笔记"><a href="#杂项笔记" class="headerlink" title="杂项笔记"></a>杂项笔记</h2></div>
+
+    
+
+    <nav class="post-nav">
+      
+        <a href="/posts/2294051188/">← 上一篇: 实验日志模板 - &lt;实验名称&gt;</a>
+      
+      
+        <a href="/posts/1130896835/">下一篇: System Design Note - &lt;Topic&gt; →</a>
+      
+    </nav>
+  </article>
+
+  
+    
+<aside class="toc-panel hud-box" id="toc-panel">
+  <details class="toc-details" open>
+    <summary>目录</summary>
+    <nav class="post-toc" id="post-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%91%A8%E6%A6%82%E8%A7%88"><span class="toc-text">本周概览</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%91%A8%E9%98%85%E8%AF%BB"><span class="toc-text">本周阅读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%91%A8%E5%AE%9E%E7%8E%B0"><span class="toc-text">本周实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95"><span class="toc-text">实验记录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-text">遇到的问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E5%91%A8%E8%AE%A1%E5%88%92"><span class="toc-text">下周计划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%82%E9%A1%B9%E7%AC%94%E8%AE%B0"><span class="toc-text">杂项笔记</span></a></li></ol></nav>
+  </details>
+</aside>
+
+  
+</section>
+
+<button id="back-to-top" class="back-to-top">顶部</button>
+
+    </main>
+  </div>
+  <footer class="tml-footer hud-box">
+  <p>© 2026 Your Name · THE MACHINE LOG</p>
+  <p class="footer-sub">基于 Hexo 构建 · 主题: the-machine-log</p>
+</footer>
+
+  
+<script>
+  window.CONFIG = {
+    root: '/',
+    lang: 'zh-CN'
+  };
+  window.TML_FEATURES = {"search":true,"toc":true,"code_copy":true,"mermaid":true,"math":true,"rss":true};
+  window.TML_I18N = {"search":{"no_match":"未找到匹配记录。","index_missing":"搜索索引不存在，请先运行 <code>hexo generate</code>。","untitled":"未命名"},"copy":{"copy":"复制","copied":"已复制","failed":"失败"}};
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+<script src="/js/clock.js"></script>
+
+
+<script src="/js/taxonomy-filter.js"></script>
+
+
+<script src="/js/machine-intro.js"></script>
+
+
+  
+<script src="/js/code-copy.js"></script>
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+</body>
+</html>

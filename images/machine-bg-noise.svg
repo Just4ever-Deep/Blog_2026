@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+  <filter id="noise">
+    <feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0.22 0 0 0 0 1 0 0 0 0 0.53 0 0 0 .32 0"/>
+  </filter>
+  <rect width="320" height="320" filter="url(#noise)" opacity=".55"/>
+  <path d="M0 40H320M0 112H320M0 226H320" stroke="#39FF88" stroke-opacity=".08"/>
+  <path d="M42 0V320M188 0V320M286 0V320" stroke="#58A6FF" stroke-opacity=".07"/>
+</svg>
