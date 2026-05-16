@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Algorithm Note - &lt;Topic&gt;</title>
-    <url>/posts/1949528857/</url>
+    <url>/Blog_2026/posts/1949528857/</url>
     <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><h2 id="思路直觉"><a href="#思路直觉" class="headerlink" title="思路直觉"></a>思路直觉</h2><h2 id="算法步骤"><a href="#算法步骤" class="headerlink" title="算法步骤"></a>算法步骤</h2><h2 id="正确性分析"><a href="#正确性分析" class="headerlink" title="正确性分析"></a>正确性分析</h2><h2 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h2><h2 id="实现代码"><a href="#实现代码" class="headerlink" title="实现代码"></a>实现代码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// code here</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="易错点"><a href="#易错点" class="headerlink" title="易错点"></a>易错点</h2><h2 id="相关题目"><a href="#相关题目" class="headerlink" title="相关题目"></a>相关题目</h2>]]></content>
@@ -17,7 +17,7 @@
   </entry>
   <entry>
     <title>实验日志模板 - &lt;实验名称&gt;</title>
-    <url>/posts/2294051188/</url>
+    <url>/Blog_2026/posts/2294051188/</url>
     <content><![CDATA[<h2 id="实验目标"><a href="#实验目标" class="headerlink" title="实验目标"></a>实验目标</h2><h2 id="假设"><a href="#假设" class="headerlink" title="假设"></a>假设</h2><h2 id="环境与配置"><a href="#环境与配置" class="headerlink" title="环境与配置"></a>环境与配置</h2><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h2 id="结论与下一步"><a href="#结论与下一步" class="headerlink" title="结论与下一步"></a>结论与下一步</h2>]]></content>
       <categories>
         <category>Experiments</category>
@@ -29,7 +29,7 @@
   </entry>
   <entry>
     <title>Hello Machine Log</title>
-    <url>/posts/1911183159/</url>
+    <url>/Blog_2026/posts/1911183159/</url>
     <content><![CDATA[<h2 id="Boot-Record"><a href="#Boot-Record" class="headerlink" title="Boot Record"></a>Boot Record</h2><blockquote>
 <p>boot sequence initialized
 identity: computer science graduate student
@@ -58,7 +58,7 @@ archive access granted</p>
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/posts/1243066710/</url>
+    <url>/Blog_2026/posts/1243066710/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
@@ -76,7 +76,7 @@ archive access granted</p>
   </entry>
   <entry>
     <title>Paper Reading - &lt;Paper Title&gt;</title>
-    <url>/posts/523748997/</url>
+    <url>/Blog_2026/posts/523748997/</url>
     <content><![CDATA[<h2 id="论文信息"><a href="#论文信息" class="headerlink" title="论文信息"></a>论文信息</h2><ul>
 <li>论文标题:</li>
 <li>作者:</li>
@@ -100,7 +100,7 @@ archive access granted</p>
   </entry>
   <entry>
     <title>Research Weekly Log - Week &lt;N&gt;</title>
-    <url>/posts/4103984525/</url>
+    <url>/Blog_2026/posts/4103984525/</url>
     <content><![CDATA[<h2 id="本周概览"><a href="#本周概览" class="headerlink" title="本周概览"></a>本周概览</h2><h2 id="本周阅读"><a href="#本周阅读" class="headerlink" title="本周阅读"></a>本周阅读</h2><h2 id="本周实现"><a href="#本周实现" class="headerlink" title="本周实现"></a>本周实现</h2><h2 id="实验记录"><a href="#实验记录" class="headerlink" title="实验记录"></a>实验记录</h2><h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><h2 id="下周计划"><a href="#下周计划" class="headerlink" title="下周计划"></a>下周计划</h2><h2 id="杂项笔记"><a href="#杂项笔记" class="headerlink" title="杂项笔记"></a>杂项笔记</h2>]]></content>
       <categories>
         <category>Research Log</category>
@@ -114,7 +114,7 @@ archive access granted</p>
   </entry>
   <entry>
     <title>系列文章模板 - &lt;章节标题&gt;</title>
-    <url>/posts/1746219503/</url>
+    <url>/Blog_2026/posts/1746219503/</url>
     <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><h2 id="核心内容"><a href="#核心内容" class="headerlink" title="核心内容"></a>核心内容</h2><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2>]]></content>
       <categories>
         <category>Notes</category>
@@ -125,7 +125,7 @@ archive access granted</p>
   </entry>
   <entry>
     <title>System Design Note - &lt;Topic&gt;</title>
-    <url>/posts/1130896835/</url>
+    <url>/Blog_2026/posts/1130896835/</url>
     <content><![CDATA[<h2 id="问题定义"><a href="#问题定义" class="headerlink" title="问题定义"></a>问题定义</h2><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h3 id="功能需求"><a href="#功能需求" class="headerlink" title="功能需求"></a>功能需求</h3><h3 id="非功能需求"><a href="#非功能需求" class="headerlink" title="非功能需求"></a>非功能需求</h3><h2 id="约束条件"><a href="#约束条件" class="headerlink" title="约束条件"></a>约束条件</h2><h2 id="高层设计"><a href="#高层设计" class="headerlink" title="高层设计"></a>高层设计</h2><h2 id="核心组件"><a href="#核心组件" class="headerlink" title="核心组件"></a>核心组件</h2><h2 id="数据模型"><a href="#数据模型" class="headerlink" title="数据模型"></a>数据模型</h2><h2 id="API-草图"><a href="#API-草图" class="headerlink" title="API 草图"></a>API 草图</h2><h2 id="故障处理"><a href="#故障处理" class="headerlink" title="故障处理"></a>故障处理</h2><h2 id="方案权衡"><a href="#方案权衡" class="headerlink" title="方案权衡"></a>方案权衡</h2><h2 id="容量估算"><a href="#容量估算" class="headerlink" title="容量估算"></a>容量估算</h2><h2 id="待解决问题"><a href="#待解决问题" class="headerlink" title="待解决问题"></a>待解决问题</h2>]]></content>
       <categories>
         <category>Systems</category>
@@ -141,27 +141,12 @@ archive access granted</p>
   </entry>
   <entry>
     <title>404</title>
-    <url>/404.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>日历热力图</title>
-    <url>/calendar/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>书单</title>
-    <url>/books/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Categories</title>
-    <url>/categories/index.html</url>
+    <url>/Blog_2026/404.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>About</title>
-    <url>/about/index.html</url>
+    <url>/Blog_2026/about/index.html</url>
     <content><![CDATA[<h2 id="我是谁"><a href="#我是谁" class="headerlink" title="我是谁"></a>我是谁</h2><p>我是一名计算机专业研究生，主要关注系统、算法、人工智能与工程实践。</p>
 <h2 id="为什么写这个博客"><a href="#为什么写这个博客" class="headerlink" title="为什么写这个博客"></a>为什么写这个博客</h2><p>记录学习路径、论文阅读过程、实验细节和项目复盘，形成可持续迭代的知识库。</p>
 <h2 id="研究兴趣"><a href="#研究兴趣" class="headerlink" title="研究兴趣"></a>研究兴趣</h2><ul>
@@ -185,43 +170,63 @@ archive access granted</p>
 ]]></content>
   </entry>
   <entry>
-    <title>Archives</title>
-    <url>/archives/index.html</url>
+    <title>书单</title>
+    <url>/Blog_2026/books/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Home</title>
-    <url>/en/index.html</url>
+    <title>Categories</title>
+    <url>/Blog_2026/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Archives</title>
+    <url>/Blog_2026/archives/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>404</title>
-    <url>/en/404.html</url>
+    <url>/Blog_2026/en/404.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Search</title>
-    <url>/search/index.html</url>
+    <title>日历热力图</title>
+    <url>/Blog_2026/calendar/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>项目档案</title>
-    <url>/projects/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>文章系列</title>
-    <url>/series/index.html</url>
+    <title>Home</title>
+    <url>/Blog_2026/en/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>实验日志</title>
-    <url>/experiments/index.html</url>
+    <url>/Blog_2026/experiments/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>项目档案</title>
+    <url>/Blog_2026/projects/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>文章系列</title>
+    <url>/Blog_2026/series/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Search</title>
+    <url>/Blog_2026/search/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Tags</title>
+    <url>/Blog_2026/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>About</title>
-    <url>/en/about/index.html</url>
+    <url>/Blog_2026/en/about/index.html</url>
     <content><![CDATA[<h2 id="Who-I-Am"><a href="#Who-I-Am" class="headerlink" title="Who I Am"></a>Who I Am</h2><p>I am a computer science graduate student focused on systems, algorithms, AI, and engineering practice.</p>
 <h2 id="Why-This-Blog"><a href="#Why-This-Blog" class="headerlink" title="Why This Blog"></a>Why This Blog</h2><p>I use this blog to track learning paths, paper reading notes, experiment details, and project retrospectives as a reusable knowledge base.</p>
 <h2 id="Research-Interests"><a href="#Research-Interests" class="headerlink" title="Research Interests"></a>Research Interests</h2><ul>
@@ -246,52 +251,47 @@ archive access granted</p>
   </entry>
   <entry>
     <title>Archives</title>
-    <url>/en/archives/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Tags</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Books</title>
-    <url>/en/books/index.html</url>
+    <url>/Blog_2026/en/archives/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Calendar Heatmap</title>
-    <url>/en/calendar/index.html</url>
+    <url>/Blog_2026/en/calendar/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Books</title>
+    <url>/Blog_2026/en/books/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Categories</title>
-    <url>/en/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Projects</title>
-    <url>/en/projects/index.html</url>
+    <url>/Blog_2026/en/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Experiments</title>
-    <url>/en/experiments/index.html</url>
+    <url>/Blog_2026/en/experiments/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Search</title>
-    <url>/en/search/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Series</title>
-    <url>/en/series/index.html</url>
+    <title>Projects</title>
+    <url>/Blog_2026/en/projects/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Tags</title>
-    <url>/en/tags/index.html</url>
+    <url>/Blog_2026/en/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Series</title>
+    <url>/Blog_2026/en/series/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Search</title>
+    <url>/Blog_2026/en/search/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
