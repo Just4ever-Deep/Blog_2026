@@ -14,17 +14,24 @@
 <h2 id="下一步"><a href="#下一步" class="headerlink" title="下一步"></a>下一步</h2><p>首页已经整理成一个更轻的入口：保留身份、方向和必要链接。后续只按需要补充内容。</p>
 ]]></content>
       <categories>
-        <category>Research Log</category>
+        <category>系统</category>
       </categories>
       <tags>
         <tag>notes</tag>
         <tag>workflow</tag>
+        <tag>系统</tag>
       </tags>
   </entry>
   <entry>
     <title>404</title>
     <url>/Blog_2026/404.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>算法</title>
+    <url>/Blog_2026/algorithms/index.html</url>
+    <content><![CDATA[<p>关注问题建模、复杂度分析和可复用题解模板，让思路比答案更容易迁移。</p>
+]]></content>
   </entry>
   <entry>
     <title>About</title>
@@ -39,9 +46,9 @@
 <li>Programming Languages</li>
 </ul>
 <h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul>
-<li>Python / C++ / Rust</li>
-<li>Linux / Git / Docker</li>
-<li>PyTorch / NumPy</li>
+<li>Python &#x2F; C++ &#x2F; Rust</li>
+<li>Linux &#x2F; Git &#x2F; Docker</li>
+<li>PyTorch &#x2F; NumPy</li>
 <li>分布式系统与数据库基础组件</li>
 </ul>
 <h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><ul>
@@ -50,13 +57,29 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Archives</title>
+    <url>/Blog_2026/archives/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>AI</title>
+    <url>/Blog_2026/ai/index.html</url>
+    <content><![CDATA[<p>关注模型、工具和应用实践，记录能真正改善学习与构建流程的 AI 方法。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>404</title>
+    <url>/Blog_2026/en/404.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>书单</title>
     <url>/Blog_2026/books/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Archives</title>
-    <url>/Blog_2026/archives/index.html</url>
+    <title>Home</title>
+    <url>/Blog_2026/en/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -70,18 +93,19 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>404</title>
-    <url>/Blog_2026/en/404.html</url>
+    <title>工程</title>
+    <url>/Blog_2026/engineering/index.html</url>
+    <content><![CDATA[<p>关注编码、调试、测试和交付中的判断，把经验整理成下次能复用的动作。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Search</title>
+    <url>/Blog_2026/search/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>项目档案</title>
     <url>/Blog_2026/projects/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Home</title>
-    <url>/Blog_2026/en/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -95,14 +119,15 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Search</title>
-    <url>/Blog_2026/search/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Tags</title>
     <url>/Blog_2026/tags/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>系统</title>
+    <url>/Blog_2026/systems/index.html</url>
+    <content><![CDATA[<p>关注分布式系统、存储、操作系统与基础设施，把复杂机制拆成清晰的结构。</p>
+]]></content>
   </entry>
   <entry>
     <title>About</title>
@@ -117,9 +142,9 @@
 <li>Programming Languages</li>
 </ul>
 <h2 id="Tech-Stack"><a href="#Tech-Stack" class="headerlink" title="Tech Stack"></a>Tech Stack</h2><ul>
-<li>Python / C++ / Rust</li>
-<li>Linux / Git / Docker</li>
-<li>PyTorch / NumPy</li>
+<li>Python &#x2F; C++ &#x2F; Rust</li>
+<li>Linux &#x2F; Git &#x2F; Docker</li>
+<li>PyTorch &#x2F; NumPy</li>
 <li>Foundations of distributed systems and databases</li>
 </ul>
 <h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><ul>
@@ -128,18 +153,25 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Books</title>
-    <url>/Blog_2026/en/books/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Calendar Heatmap</title>
-    <url>/Blog_2026/en/calendar/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>AI</title>
+    <url>/Blog_2026/en/ai/index.html</url>
+    <content><![CDATA[<p>Models, tools, and applied workflows that make learning and building more effective.</p>
+]]></content>
   </entry>
   <entry>
     <title>Archives</title>
     <url>/Blog_2026/en/archives/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Algorithms</title>
+    <url>/Blog_2026/en/algorithms/index.html</url>
+    <content><![CDATA[<p>Problem modeling, complexity analysis, and reusable solution patterns that travel beyond one exercise.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Books</title>
+    <url>/Blog_2026/en/books/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -148,13 +180,29 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>Calendar Heatmap</title>
+    <url>/Blog_2026/en/calendar/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Engineering</title>
+    <url>/Blog_2026/en/engineering/index.html</url>
+    <content><![CDATA[<p>Coding, debugging, testing, and delivery notes shaped into actions worth reusing.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Projects</title>
+    <url>/Blog_2026/en/projects/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Experiments</title>
     <url>/Blog_2026/en/experiments/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Projects</title>
-    <url>/Blog_2026/en/projects/index.html</url>
+    <title>Series</title>
+    <url>/Blog_2026/en/series/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -168,8 +216,9 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Series</title>
-    <url>/Blog_2026/en/series/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>Systems</title>
+    <url>/Blog_2026/en/systems/index.html</url>
+    <content><![CDATA[<p>Distributed systems, storage, operating systems, and infrastructure notes distilled into clear structure.</p>
+]]></content>
   </entry>
 </search>

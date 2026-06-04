@@ -9,15 +9,16 @@
   <link href="https://just4ever-deep.github.io/Blog_2026/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, Just4ever-Deep</rights>
   <subtitle>精简记录系统、算法、AI 与工程实践中的关键问题。</subtitle>
-  <title>THE MACHINE LOG</title>
+  <title>LOG</title>
   <updated>2026-05-16T14:30:00.000Z</updated>
   <entry>
     <author>
       <name>Just4ever-Deep</name>
     </author>
-    <category term="Research Log" scheme="https://just4ever-deep.github.io/Blog_2026/categories/Research-Log/"/>
+    <category term="系统" scheme="https://just4ever-deep.github.io/Blog_2026/categories/%E7%B3%BB%E7%BB%9F/"/>
     <category term="notes" scheme="https://just4ever-deep.github.io/Blog_2026/tags/notes/"/>
     <category term="workflow" scheme="https://just4ever-deep.github.io/Blog_2026/tags/workflow/"/>
+    <category term="系统" scheme="https://just4ever-deep.github.io/Blog_2026/tags/%E7%B3%BB%E7%BB%9F/"/>
     <content>
       <![CDATA[<p>这个页面会更像一份精简的研究与工程日志：不把所有材料都搬上来，只留下真正影响理解和行动的部分。</p><h2 id="记录什么"><a href="#记录什么" class="headerlink" title="记录什么"></a>记录什么</h2><ul><li>学到一个概念后，哪些解释真正帮我理解了它。</li><li>做实验或项目时，哪些假设被验证，哪些被推翻。</li><li>阅读论文、系统设计或算法题时，哪些问题值得以后继续追。</li><li>工程实践中，哪些取舍可以复用，哪些坑需要避开。</li></ul><h2 id="不记录什么"><a href="#不记录什么" class="headerlink" title="不记录什么"></a>不记录什么</h2><p>临时模板、默认示例和只为占位存在的页面会尽量删掉。文章会保持短而有结论，必要时再链接到更完整的实验材料。</p><h2 id="下一步"><a href="#下一步" class="headerlink" title="下一步"></a>下一步</h2><p>首页已经整理成一个更轻的入口：保留身份、方向和必要链接。后续只按需要补充内容。</p>]]>
     </content>

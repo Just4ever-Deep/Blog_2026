@@ -2,6 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://just4ever-deep.github.io/Blog_2026/en/engineering/index.html</loc>
+    
+    <lastmod>2026-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://just4ever-deep.github.io/Blog_2026/en/ai/index.html</loc>
+    
+    <lastmod>2026-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://just4ever-deep.github.io/Blog_2026/en/algorithms/index.html</loc>
+    
+    <lastmod>2026-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://just4ever-deep.github.io/Blog_2026/en/systems/index.html</loc>
+    
+    <lastmod>2026-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://just4ever-deep.github.io/Blog_2026/engineering/index.html</loc>
+    
+    <lastmod>2026-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://just4ever-deep.github.io/Blog_2026/ai/index.html</loc>
+    
+    <lastmod>2026-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://just4ever-deep.github.io/Blog_2026/algorithms/index.html</loc>
+    
+    <lastmod>2026-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://just4ever-deep.github.io/Blog_2026/systems/index.html</loc>
+    
+    <lastmod>2026-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://just4ever-deep.github.io/Blog_2026/en/about/index.html</loc>
     
     <lastmod>2026-06-04</lastmod>
@@ -240,10 +312,17 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://just4ever-deep.github.io/Blog_2026/tags/%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/categories/Research-Log/</loc>
+    <loc>https://just4ever-deep.github.io/Blog_2026/categories/%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
