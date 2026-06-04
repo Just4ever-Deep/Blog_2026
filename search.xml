@@ -28,12 +28,6 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>算法</title>
-    <url>/Blog_2026/algorithms/index.html</url>
-    <content><![CDATA[<p>关注问题建模、复杂度分析和可复用题解模板，让思路比答案更容易迁移。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>About</title>
     <url>/Blog_2026/about/index.html</url>
     <content><![CDATA[<h2 id="我是谁"><a href="#我是谁" class="headerlink" title="我是谁"></a>我是谁</h2><p>我是一名计算机专业研究生，主要关注系统、算法、人工智能与工程实践。</p>
@@ -57,9 +51,10 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Archives</title>
-    <url>/Blog_2026/archives/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>算法</title>
+    <url>/Blog_2026/algorithms/index.html</url>
+    <content><![CDATA[<p>关注问题建模、复杂度分析和可复用题解模板，让思路比答案更容易迁移。</p>
+]]></content>
   </entry>
   <entry>
     <title>AI</title>
@@ -68,13 +63,18 @@
 ]]></content>
   </entry>
   <entry>
-    <title>404</title>
-    <url>/Blog_2026/en/404.html</url>
+    <title>日历热力图</title>
+    <url>/Blog_2026/calendar/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>书单</title>
     <url>/Blog_2026/books/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Archives</title>
+    <url>/Blog_2026/archives/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -88,8 +88,8 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>日历热力图</title>
-    <url>/Blog_2026/calendar/index.html</url>
+    <title>项目档案</title>
+    <url>/Blog_2026/projects/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -99,13 +99,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Search</title>
-    <url>/Blog_2026/search/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>项目档案</title>
-    <url>/Blog_2026/projects/index.html</url>
+    <title>404</title>
+    <url>/Blog_2026/en/404.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -114,13 +109,13 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>文章系列</title>
-    <url>/Blog_2026/series/index.html</url>
+    <title>Search</title>
+    <url>/Blog_2026/search/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Tags</title>
-    <url>/Blog_2026/tags/index.html</url>
+    <title>文章系列</title>
+    <url>/Blog_2026/series/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -128,6 +123,11 @@
     <url>/Blog_2026/systems/index.html</url>
     <content><![CDATA[<p>关注分布式系统、存储、操作系统与基础设施，把复杂机制拆成清晰的结构。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Tags</title>
+    <url>/Blog_2026/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>About</title>
@@ -153,20 +153,14 @@
 ]]></content>
   </entry>
   <entry>
-    <title>AI</title>
-    <url>/Blog_2026/en/ai/index.html</url>
-    <content><![CDATA[<p>Models, tools, and applied workflows that make learning and building more effective.</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Archives</title>
     <url>/Blog_2026/en/archives/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Algorithms</title>
-    <url>/Blog_2026/en/algorithms/index.html</url>
-    <content><![CDATA[<p>Problem modeling, complexity analysis, and reusable solution patterns that travel beyond one exercise.</p>
+    <title>AI</title>
+    <url>/Blog_2026/en/ai/index.html</url>
+    <content><![CDATA[<p>Models, tools, and applied workflows that make learning and building more effective.</p>
 ]]></content>
   </entry>
   <entry>
@@ -175,9 +169,10 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Categories</title>
-    <url>/Blog_2026/en/categories/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>Algorithms</title>
+    <url>/Blog_2026/en/algorithms/index.html</url>
+    <content><![CDATA[<p>Problem modeling, complexity analysis, and reusable solution patterns that travel beyond one exercise.</p>
+]]></content>
   </entry>
   <entry>
     <title>Calendar Heatmap</title>
@@ -196,13 +191,13 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Experiments</title>
-    <url>/Blog_2026/en/experiments/index.html</url>
+    <title>Categories</title>
+    <url>/Blog_2026/en/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Series</title>
-    <url>/Blog_2026/en/series/index.html</url>
+    <title>Experiments</title>
+    <url>/Blog_2026/en/experiments/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -211,8 +206,8 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Tags</title>
-    <url>/Blog_2026/en/tags/index.html</url>
+    <title>Series</title>
+    <url>/Blog_2026/en/series/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -220,5 +215,10 @@
     <url>/Blog_2026/en/systems/index.html</url>
     <content><![CDATA[<p>Distributed systems, storage, operating systems, and infrastructure notes distilled into clear structure.</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Tags</title>
+    <url>/Blog_2026/en/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
