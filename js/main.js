@@ -74,15 +74,94 @@
     pre.setAttribute('data-lang', lang);
   });
 
-  const heroTerminal = document.getElementById('hero-terminal');
-  if (heroTerminal) {
-    const lines = heroTerminal.textContent.trim().split('\n');
-    heroTerminal.textContent = '';
-    lines.forEach((line, index) => {
-      setTimeout(() => {
-        heroTerminal.textContent += `${line}\n`;
-      }, 230 * (index + 1));
-    });
+  const formatCountdown = (seconds) => {
+    const safeSeconds = Math.max(0, Math.ceil(seconds));
+    const minutes = Math.floor(safeSeconds / 60);
+    const rest = String(safeSeconds % 60).padStart(2, '0');
+    return `${minutes}:${rest}`;
+  };
+
+  document.querySelectorAll('[data-home-countdown]').forEach((root) => {
+    const totalSeconds = Math.max(1, Number(root.getAttribute('data-seconds')) || 60);
+    const timeNode = root.querySelector('[data-countdown-time]');
+    const bar = root.querySelector('[data-countdown-bar]');
+    const toggle = root.querySelector('[data-countdown-toggle]');
+    const reset = root.querySelector('[data-countdown-reset]');
+    let remaining = totalSeconds;
+    let timer = null;
+
+    const setProgress = () => {
+      const doneRatio = Math.min(1, Math.max(0, (totalSeconds - remaining) / totalSeconds));
+      if (timeNode) timeNode.textContent = formatCountdown(remaining);
+      if (bar) bar.style.width = `${Math.round(doneRatio * 100)}%`;
+      if (toggle) {
+        const isRunning = Boolean(timer);
+        toggle.textContent = isRunning ? (toggle.dataset.pause || 'Pause') : (toggle.dataset.start || 'Start');
+      }
+    };
+
+    const stop = () => {
+      if (timer) window.clearInterval(timer);
+      timer = null;
+      setProgress();
+    };
+
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        if (timer) {
+          stop();
+          return;
+        }
+        if (remaining <= 0) remaining = totalSeconds;
+        timer = window.setInterval(() => {
+          remaining -= 1;
+          if (remaining <= 0) {
+            remaining = 0;
+            stop();
+            return;
+          }
+          setProgress();
+        }, 1000);
+        setProgress();
+      });
+    }
+
+    if (reset) {
+      reset.addEventListener('click', () => {
+        stop();
+        remaining = totalSeconds;
+        setProgress();
+      });
+    }
+
+    setProgress();
+  });
+
+  const readingCountdown = document.querySelector('[data-reading-countdown]');
+  const postContent = document.querySelector('.post-content');
+  if (readingCountdown && postContent) {
+    const totalSeconds = Math.max(1, Number(readingCountdown.getAttribute('data-total-seconds')) || 60);
+    const timeNode = readingCountdown.querySelector('[data-reading-time]');
+    const progressNode = readingCountdown.querySelector('[data-reading-progress]');
+    const bar = readingCountdown.querySelector('[data-reading-bar]');
+    const doneLabel = readingCountdown.getAttribute('data-done-label') || 'Done';
+    const progressLabel = progressNode ? (progressNode.textContent.split(':')[0] || 'Progress') : 'Progress';
+
+    const updateReadingProgress = () => {
+      const rect = postContent.getBoundingClientRect();
+      const pageTop = window.scrollY + rect.top;
+      const readableDistance = Math.max(1, postContent.offsetHeight - window.innerHeight * 0.45);
+      const progress = Math.min(1, Math.max(0, (window.scrollY - pageTop + 120) / readableDistance));
+      const percent = Math.round(progress * 100);
+      const remaining = Math.ceil(totalSeconds * (1 - progress));
+      if (timeNode) timeNode.textContent = percent >= 99 ? doneLabel : formatCountdown(remaining);
+      if (progressNode) progressNode.textContent = `${progressLabel}: ${percent}%`;
+      if (bar) bar.style.width = `${percent}%`;
+    };
+
+    window.addEventListener('scroll', updateReadingProgress, { passive: true });
+    window.addEventListener('resize', updateReadingProgress);
+    updateReadingProgress();
   }
 
   if (window.TML_FEATURES && window.TML_FEATURES.mermaid && window.mermaid) {

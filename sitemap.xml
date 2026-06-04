@@ -2,54 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/posts/1746219503/</loc>
+    <loc>https://just4ever-deep.github.io/Blog_2026/en/about/index.html</loc>
     
-    <lastmod>2026-04-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/posts/2294051188/</loc>
-    
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-06-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/posts/4103984525/</loc>
+    <loc>https://just4ever-deep.github.io/Blog_2026/about/index.html</loc>
     
-    <lastmod>2026-04-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/posts/1130896835/</loc>
-    
-    <lastmod>2026-04-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/posts/1949528857/</loc>
-    
-    <lastmod>2026-04-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/posts/523748997/</loc>
-    
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-06-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,7 +22,7 @@
   <url>
     <loc>https://just4ever-deep.github.io/Blog_2026/posts/1911183159/</loc>
     
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-05-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -209,15 +173,6 @@
   </url>
   
   <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/en/about/index.html</loc>
-    
-    <lastmod>2026-04-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://just4ever-deep.github.io/Blog_2026/404.html</loc>
     
     <lastmod>2026-04-27</lastmod>
@@ -262,148 +217,25 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/about/index.html</loc>
-    
-    <lastmod>2026-04-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/posts/1243066710/</loc>
-    
-    <lastmod>2026-04-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://just4ever-deep.github.io/Blog_2026</loc>
-    <lastmod>2026-05-16</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/leetcode/</loc>
-    <lastmod>2026-05-16</lastmod>
+    <loc>https://just4ever-deep.github.io/Blog_2026/tags/notes/</loc>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/cpp/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/rust/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/experiment/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/research/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/python/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/linux/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/paper-reading/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/machine-learning/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/deep-learning/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/security/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/network/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/series/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/distributed-system/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/database/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/operating-system/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/tags/compiler/</loc>
-    <lastmod>2026-05-16</lastmod>
+    <loc>https://just4ever-deep.github.io/Blog_2026/tags/workflow/</loc>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -411,64 +243,8 @@
 
   
   <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/categories/Algorithms/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/categories/Experiments/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://just4ever-deep.github.io/Blog_2026/categories/Research-Log/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/categories/Reading-Notes/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/categories/Notes/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/categories/Systems/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/categories/Research-Log/AI/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/categories/Systems/Engineering/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://just4ever-deep.github.io/Blog_2026/categories/Research-Log/AI/Math/</loc>
-    <lastmod>2026-05-16</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

@@ -6,8 +6,8 @@
 .post-content blockquote {
   margin: 1rem 0;
   padding: 0.6rem 0.9rem;
-  border-left: 3px solid rgba(57,255,136,0.45);
-  background: rgba(57,255,136,0.06);
+  border-left: 3px solid rgba(255,122,89,0.45);
+  background: rgba(255,122,89,0.07);
 }
 .post-content ul,
 .post-content ol {

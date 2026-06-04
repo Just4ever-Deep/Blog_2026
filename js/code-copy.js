@@ -18,12 +18,13 @@
       position: 'absolute',
       top: '8px',
       right: '8px',
-      border: '1px solid rgba(31,111,235,.35)',
-      background: '#0a0f17',
-      color: '#39FF88',
+      border: '1px solid rgba(255,122,89,.35)',
+      background: '#1E1B17',
+      color: '#FF7A59',
       padding: '2px 8px',
       cursor: 'pointer',
-      fontSize: '12px'
+      fontSize: '12px',
+      borderRadius: '7px'
     });
 
     button.addEventListener('click', async () => {

@@ -7,9 +7,10 @@
 .extend {
   margin: 0 0.2rem;
   padding: 0.28rem 0.55rem;
-  border: 1px solid rgba(31,111,235,0.35);
+  border: 1px solid rgba(255,122,89,0.28);
+  border-radius: 7px;
 }
 .page-number.current {
-  border-color: rgba(57,255,136,0.5);
-  color: #39ff88;
+  border-color: rgba(77,182,172,0.5);
+  color: #4db6ac;
 }
